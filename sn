@@ -1,0 +1,11 @@
+if( child.state not in (problem.explored) and child not in problem.frontier):
+
+                    if(problem.goalTest(child)):
+                        
+                        return child
+                        
+                        problem.frontier.append(child)
+                   
+  
+
+  ( problem.frontier.count(new_node.state) < 1)

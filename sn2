@@ -1,0 +1,22 @@
+[['1', '2', '5'], ['3', '4', '0'], ['6', '7', '8']]
+
+if(up )
+
+
+
+                    
+
+            if(action=="horizontal"):
+
+
+                if(door > 0 ): # go left
+
+                    
+
+                else:  # go right5
+
+                    temp = received_state[floor][door+1]
+                    received_state[floor][door] = temp
+                    received_state[floor][door+1] = '0'
+                
+                

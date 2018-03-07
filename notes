@@ -1,0 +1,62 @@
+   
+       input_listy = copy.deepcopy(input_board)
+       ybranch_output = vertical(input_listy,-1)  
+       list_of_test.append(ybranch_output)
+
+   elif(floor == 2):
+
+       input_listy = copy.deepcopy(input_board)
+       ybranch_output = vertical(input_listy,-1)  
+       list_of_test.append(ybranch_output)
+
+
+
+        
+   elif(door == 2):
+
+        input_listx = copy.deepcopy(input_board)
+        xbranch_output = horizontal(input_listx,-1)
+        list_of_test.append(xbranch_output)
+
+   else:
+        
+        input_listy = copy.deepcopy(input_board)
+        ybranch_output = vertical(input_listy,1)  
+        list_of_test.append(ybranch_output)
+
+    
+        
+    
+   print str(list_of_test)
+
+   print " we have explored this  " +  str( len(explored) ) + " times "
+
+   return list_of_test
+  
+
+  Credit
+•
+Artificial Intelligence, A Modern Approach.  Stuart Russell and
+Peter  Norvig.  Third Edition.  Pearson  Education.
+http://aima.cs.berkeley.edu
+
+
+print  len(this_board[0])
+    
+    temp = this_board[actions.floor][actions.door]
+
+    if(floor <= len(this_board[0]) -1):
+
+        temp= this_board[actions.floor-1][actions.door]
+        this_board[actions.floor][actions.door] = temp
+        this_board[actions.floor-1][actions.door]   = 0
+
+        return this_board
+    
+    if(floor >= len(this_board[0]) -1):
+
+        temp= this_board[floor-1][door]
+        this_board[floor][door] = temp
+        this_board[floor-1][door]   = 0
+
+    
